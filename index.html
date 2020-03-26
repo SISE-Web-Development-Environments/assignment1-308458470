@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
+<ul id="menu">
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -12,7 +12,7 @@
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
-</div>
+</ul>
 		  
 <section id="about" class="section">
 <br/>
@@ -24,6 +24,10 @@
 <br/>
 <br/>
 <br/>
+<h1 class="headers">About Me</h1>
+<p>My name is Yaar May-Paz and I'm 26 years old. I'm a third year student of Information System Engineering.
+  On my spare time I like to do Yoga and run. 
+</p>
 <br/>
 <br/>
 <br/>
@@ -31,7 +35,6 @@
 <br/>
 <br/>
 <br/>
-about me
 <br/>
 <br/>
 <br/>
@@ -40,6 +43,19 @@ about me
 <section id="photos" class="section">
 <br/>
 <br/>
+<h2 class="headers">My Photos</h2>
+<br/>
+<div class="row">
+  <div class="column">
+    <img src="croatia.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="guatemala.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="mexico.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
 <br/>
 <br/>
 <br/>
@@ -53,8 +69,6 @@ about me
 <br/>
 <br/>
 <br/>
-<br/>
-my photos
 <br/>
 <br/>
 <br/>
@@ -63,6 +77,12 @@ my photos
 <section id="playlist" class="section">
 <br/>
 <br/>
+<h3 class="headers">My Playlist</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/tpzkSg9e3Uw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
 <br/>
@@ -72,12 +92,6 @@ my photos
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
 <br/>
 <br/>
 <br/>
@@ -86,21 +100,43 @@ my playlist
 <section id="like" class="section">
 <br/>
 <br/>
+<h4 class="headers">Give me a like</h4>
+<br/>
+<br/>
+<div
+  data-href="https://developers.facebook.com/docs/plugins/" data-action="like">
+</div>
+<br/>
+<br/>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+<div class="fb-like" 
+  data-href="http://127.0.0.1:5500/assignment1-yaarm/index.html#like" 
+  data-layout="standard" 
+  data-action="like" 
+  data-show-faces="true">
+</div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+<br/>
+<br/>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+<br/>
+<br/>
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
 <br/>
 <br/>
 <br/>
@@ -110,6 +146,7 @@ give me a like
 <br/>
 <br/>
 <br/>
+<h5 class="headers">Scan my code</h5>
 <br/>
 <br/>
 <br/>
@@ -123,7 +160,6 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
 <br/>
 <br/>
 <br/>
@@ -156,6 +192,7 @@ ans
 <br/>
 <br/>
 <br/>
+<h6 class="headers">Contact me</h6>
 <br/>
 <br/>
 <br/>
@@ -169,7 +206,6 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
 <br/>
 <br/>
 <br/>
