@@ -7,6 +7,13 @@
 	font-family: fantasy;
 }
 
+.navigation {
+	position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
 body {
 	background: url("light-bulb-background.jpg") no-repeat center center fixed;
   	background-size: cover;
@@ -21,9 +28,9 @@ body {
 }
 
 p {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: monospace;
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 ul {
@@ -41,24 +48,36 @@ ul {
   li a {
 	display: block;
 	color: white;
-	text-align: center;
 	padding: 14px 16px;
+	text-align: center;
 	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: monospace;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
-	background-color: #111;
+	background-color: lightslategray;
   }
 
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+	padding-left: 180px;
+}  
+
 .column {
 	float: left;
 	width: 25%;
-	padding: 5px;
+	padding: 10px;
+  }
+
+  .column img {
+	transition: transform .5s ease;
   }
   
-  /* Clear floats after image containers */
+  .column:hover img {
+	transform: scale(1.25);
+  }
+  
   .row::after {
 	content: "";
 	clear: both;
@@ -75,4 +94,11 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	display: block
+  }
+
+  img {
+	border: 1px solid lightslategray;
+	padding: 5px;
+	width: 150px;
+	border-radius: 8px;
   }
