@@ -34,7 +34,7 @@ p {
 	font-size: 20px;
 }
 
-ul {
+.menu {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -46,7 +46,7 @@ ul {
 	float: left;
   }
   
-  li a {
+  li a, .name {
 	display: block;
 	color: white;
 	padding: 14px 16px;
@@ -55,6 +55,10 @@ ul {
 	font-weight: bold;
 	font-size: 20px;
 	font-family: monospace;
+  }
+
+  .name {
+	  padding-right: 70px;
   }
   
   li a:hover {
@@ -108,6 +112,7 @@ ul {
     margin:0 auto;
 	width:459px;
 	padding-bottom: 150px;
+	padding-top: 100px;
 }
 
   input, textarea {
@@ -148,9 +153,33 @@ input:focus, textarea:focus {
 	}
 
 	.fb-like , .qrCode {
-		padding-top: 50px;
+		padding-top: 30px;
 		margin:0 auto;
    		text-align: center;
+	  }
+
+	  .QA, .about {
+		font-family: Garamond;
+		font-weight: normal;
+		font-size: 25px;
+	  }
+
+	  .about {
+		padding-left: 100px;
+		padding-right: 100px;
+	  }
+
+	  .container {
+		font-weight: bold;
+		padding-left: 150px;
+		padding-right: 150px;
+		margin:0 auto;
+	  }
+
+	  .question {
+		font-size: 30px;
+		font-family: Garamond;
+		font-weight: bold;
 	  }
 
 
