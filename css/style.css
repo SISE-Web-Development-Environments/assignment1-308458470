@@ -66,12 +66,12 @@ p {
   }
 
 .row {
-	padding-left: 180px;
+	padding-left: 200px;
 }  
 
 .column {
 	float: left;
-	width: 25%;
+	width: 33%;
 	padding: 10px;
   }
 
@@ -120,12 +120,9 @@ p {
     height:27px;
     border:1px solid #dedede;
     padding:10px;
-    margin-top:3px;
     font-size:0.7em;
     color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-	border-radius:5px;
+	border-radius:3px;
 	font-family: monospace;
 }
 
